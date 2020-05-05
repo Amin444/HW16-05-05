@@ -34,10 +34,21 @@ namespace HW16_03_05
 
 
             }
-         
-
-
         }
+         
+        public static char[] letters()
+        {
+            string letters="";
+            for (char i = 'A'; i < 'z'; i++)
+            {
+             if ((char)new Random().Next(0,4)==1)
+             {
+                 letters+=i;
+             }   
+            }
+            return letters.ToCharArray();
+        }
+
        
         
    }
